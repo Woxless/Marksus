@@ -4,7 +4,7 @@
   "description": "Simple interface for a working with markov substitutions algorithms.",
   "main": "index.js",
   "scripts": {
-    "electron": "vue-cli-service build; electron .",
+    "electron": "electron .",
     "linux64Build": "electron-packager . Marksus --overwrite --asar=true --platform=linux --arch=x64 --icon=/src/assets/logo.png --prune=true --out=release-builds",
     "linux32Build": "electron-packager . Marksus --overwrite --asar=true --platform=linux --arch=ia32 --icon=/src/assets/logo.png --prune=true --out=release-builds",
     "win64Build": "electron-packager . Marksus --overwrite --asar=true --platform=win32 --arch=x64 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds",
