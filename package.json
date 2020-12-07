@@ -1,0 +1,32 @@
+{
+  "name": "marksus",
+  "version": "1.0.0",
+  "description": "Simple interface for a working with markov substitutions algorithms.",
+  "main": "index.js",
+  "scripts": {
+    "electron": "vue-cli-service build; electron .",
+    "linux64Build": "electron-packager . Marksus --overwrite --asar=true --platform=linux --arch=x64 --icon=/src/assets/logo.png --prune=true --out=release-builds",
+    "linux32Build": "electron-packager . Marksus --overwrite --asar=true --platform=linux --arch=ia32 --icon=/src/assets/logo.png --prune=true --out=release-builds",
+    "win64Build": "electron-packager . Marksus --overwrite --asar=true --platform=win32 --arch=x64 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds",
+    "win32Build": "electron-packager . Marksus --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds",
+    "buildAll": "npm run linux64Build; npm run linux32Build; npm run win64Build; npm run win32Build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woxless/Marksus.git"
+  },
+  "keywords": [
+    "markov",
+    "algorithms"
+  ],
+  "author": "Woxless",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Woxless/Marksus/issues"
+  },
+  "homepage": "https://github.com/Woxless/Marksus#readme",
+  "devDependencies": {
+    "electron": "^11.0.3",
+    "electron-packager": "^15.2.0"
+  }
+}

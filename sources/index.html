@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marksus</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/UI.css">
+</head>
+<body>
+    <aside>
+        <div id="rule-list">
+
+        </div>
+        <input class="button aside-down" type="button" value="Add rule" onclick="addRule();">
+    </aside>
+    <article>
+        <form onsubmit="marksus(); return false;">
+            <input type="text" class="input-example full-width" placeholder="Please enter your example">
+        </form>
+        <div id="answer"></div>
+    </article>
+
+    <script type="text/javascript" src="./js/DOM.js"></script>
+    <script type="text/javascript" src="./js/functions.js"></script>
+</body>
+</html>
